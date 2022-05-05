@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Categoria</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="top">
+            <picture class="logo">
+                <span class="logo__zod">ZOD-SECC</span>
+                <span class="logo__sub">Tu blog sobre cryptocurrencies</span>
+                <!-- <img src="media/logo.svg" alt="Logo de Zod Security" class="logo__img"> -->
+            </picture>
+            <ul class="nav">
+                <li class="nav__li">
+                    <a class="nav__li__a" href="#">news</a>
+                </li>
+                <li class="nav__li"> 
+                    <div class="dropdown">
+                        <button class="dropbtn nav__li__a nav__li__black" onclick="userDropCat()">
+                            Categorias
+                        </button>
+                        <div id="categorias"class="dropdown-cat box-shadow">
+                            <a class="dropdown-user__a" href="">Reseñas</a><a class="dropdown-user__a" href="">Editorial</a><a class="dropdown-user__a" href="">bitcoin</a><a class="dropdown-user__a" href="">Ethereum</a>
+                        </div>
+                  </div>
+                </li>
+                <li class="nav__li">
+                    <button onclick="userDrop()" class="nav__li__a btnreset">
+                            <i class="fas fa-user"></i>
+                            <div id="userDate" class="dropdown-user box-shadow">
+                                <a  class="dropdown-user__a" href="#">Sign out</a>
+                                <a  class="dropdown-user__a" href="#">Logín</a>
+                            </div>
+                    </button>
+                </li>
+            </ul>
+            <div class="topnav">
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a class="nav__li__a" href="#news">News</a>
+                    <div class="dropdown">
+                        <button class="dropbtn nav__li__a nav__li__black" onclick="userDropCat()">
+                            Categorias
+                        </button>
+                        <div id="categorias"class="dropdown-cat box-shadow">
+                            <a class="dropdown-user__a" href="">Reseñas</a><a class="dropdown-user__a" href="">Editorial</a><a class="dropdown-user__a" href="">bitcoin</a><a class="dropdown-user__a" href="">Ethereum</a>
+                        </div>
+                    </div>
+                    <button onclick="userDrop()" class="nav__li__a btnreset">
+                        <i class="fas fa-user"></i>
+                        <div id="userDate" class="dropdown-user box-shadow">
+                            <a  class="dropdown-user__a" href="#">Sign out</a>
+                            <a  class="dropdown-user__a" href="#">Logín</a>
+                        </div>
+                    </button>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <href="javascript:void(0);" class="icon" onclick="hamburguesa()">
+                    <i class="fa fa-bars"></i>
+                </a>
+        </nav>
+    </header>
+    <main class="indexMain margin-1">
+        <h1 class="catH1">Categorias</h1>
+        <article class="containerBlog">
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="pagination box-shadow">
+                <span class="pagination__sentido">Anterior</span> 
+                <span class="pagination__n">1</span> 
+                <span class="pagination__sentido">Siguiente</span>
+            </section>
+        </article>
+    </main>
+    <footer class="footer row-10-12 col-1-13">
+        <article class="containerBlog w-100">
+            <h3 class="footer__h3">Nuestras Redes</h3>
+            <section class="footer__redesSociales">
+                <ul class="w-100">
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-twitch"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </section>
+        </article>
+        <article class="containerBlog">
+            <h3 class="footer__h3">Categorias</h2>
+            <section class="footer__contain">
+                <ul>
+                    <li>nuevas entradas</li>
+                    <li>bitcoin</li>
+                    <li>Ethereum</li>
+                    <li>Reseñas</li>
+                    <li>Editorial</li>
+                </ul>
+            </section>
+        </article>
+        <article class="containerBlog">
+            <h3 class="footer__h3">mapa de sitio</h2>
+            <section class="footer__contain">
+                <ul>
+                    <li>home</li>
+                    <li>blog</li>
+                    <li>catalogo</li>
+                    <li>dashboard</li>
+                </ul>
+            </section>
+        </article>
+    </footer>
+    <script src="../script/app.js"></script>
+</body>
+</html>

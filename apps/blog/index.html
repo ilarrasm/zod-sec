@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Zod Zecurity | Blog </title>
+</head>
+<body class="bodyIndex">
+    <header class="header col-1-13 row-1-3">
+        <nav class="top">
+            <picture class="logo">
+                <span class="logo__zod">ZOD-SEC</span>
+                <span class="logo__sub">Tu blog sobre blockchain</span>
+                <!-- <img src="media/logo.svg" alt="Logo de Zod Security" class="logo__img"> -->
+            </picture>
+            <ul id="nav" class="nav">
+                <li class="nav__li">
+                    <a class="nav__li__a" href="#">news</a>
+                </li>
+                <li class="nav__li black"> 
+                    <div class="dropdown">
+                        <button id="btnCat" class="dropbtn nav__li__a nav__li__black">
+                            Categorias
+                        </button>
+                  </div>
+                </li>
+                <li class="nav__li">
+                    <button id="botonUser" class="nav__li__a btnreset">
+                        <i class="fas fa-user"></i>
+                    </button>
+                        <div id="userDate" class="modal">
+                            <div class="dropdownUser">
+                                <a  class="dropdownUser__a" href="#">Signout</a>
+                                <a  class="dropdownUser__a" href="#">Login</a>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+            <span id="hamburguer">
+                <i class="fa fa-bars"></i>
+            </span>
+        </nav>
+        <!--Carrousel-->
+        <div class="containerCaru">
+            <button id="prevBtn" class="carrousel__arrowLeft"><i class="fas fa-chevron-left"></i></button>
+            <article class="carousel-slide carrousel w-full">
+                <section class="carrousel__container carousel-card">
+                    <img src="./assets/media/ethereum-banco-central-1536x512.jpg" alt="" class="carrousel__container__img">
+                    <div class="carrousel__container__post">
+                        <h1 class="H1">AMD SUPERA A SU COMPETIDOR</h1>
+                        <p class="carrousel__container__post__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quia mollitia vel quae perspiciatis facere fugiat delectus, veritatis cupiditate expedita sint neque quibusdam rerum numquam perferendis dolore nesciunt inventore voluptatum.
+                        </p>
+                        <span class="carrousel__container__post__date">20 de diciembre del 2021</span>
+                        <a href="" class="carrousel__container__post__a">Seguir Leyendo</a>
+                    </div>
+                </section>
+                <section class="carrousel__container carousel-card">
+                    <img src="./assets/media/bitecaru.webp" alt="" class="carrousel__container__img">
+                    <div class="carrousel__container__post">
+                        <h1 class="H1">AMD SUPERA A SU COMPETIDOR</h1>
+                        <p class="carrousel__container__post__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quia mollitia vel quae perspiciatis facere fugiat delectus, veritatis cupiditate expedita sint neque quibusdam rerum numquam perferendis dolore nesciunt inventore voluptatum.
+                        </p>
+                        <span class="carrousel__container__post__date">20 de diciembre del 2021</span>
+                        <a href="" class="carrousel__container__post__a">Seguir Leyendo</a>
+                    </div>
+                </section>
+                <section class="carrousel__container carousel-card">
+                    <img src="./assets/media/amd.jpg" alt="" class="carrousel__container__img">
+                    <div class="carrousel__container__post">
+                        <h1 class="H1">AMD SUPERA A SU COMPETIDOR</h1>
+                        <p class="carrousel__container__post__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quia mollitia vel quae perspiciatis facere fugiat delectus, veritatis cupiditate expedita sint neque quibusdam rerum numquam perferendis dolore nesciunt inventore voluptatum.
+                        </p>
+                        <span class="carrousel__container__post__date">20 de diciembre del 2021</span>
+                        <a href="" class="carrousel__container__post__a">Seguir Leyendo</a>
+                    </div>
+                </section>
+                <!--<section class="carrousel__container carousel-card" id="firstClone" > 
+                    <img src="media/pruebapic.jpg" alt="" class="carrousel__container__img">
+                    <div class="carrousel__container__post">
+                        <h1 class="H1">AMD SUPERA A SU COMPETIDOR</h1>
+                        <p class="carrousel__container__post__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quia mollitia vel quae perspiciatis facere fugiat delectus, veritatis cupiditate expedita sint neque quibusdam rerum numquam perferendis dolore nesciunt inventore voluptatum.
+                        </p>
+                        <span class="carrousel__container__post__date">20 de diciembre del 2021</span>
+                        <a href="" class="carrousel__container__post__a">Seguir Leyendo</a>
+                    </div>
+                </section>-->
+            </article>
+            <button id="nextBtn" class="carrousel__arrowRight"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </header>
+    <main class="indexMain row-3-10 col-1-9">
+        <article class="containerBlog">
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="./assets/media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="./assets/media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="./assets/media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="card box-shadow">
+                <h2 class="card__tittle col-3-6 row-1-3">Nvidia trae lo nuevo en mineria</h2>
+                <picture class="card__pic col-1-3 row-1-4">
+                    <img src="./assets/media/bitecaru.webp" alt="">
+                </picture>
+                <div class="card__data col-1-3 row-1-3">
+                    <span class="fecha">20 de septiembre 2022</span>
+                    <span class="categoria">Bitcoin</span>
+                </div>
+                <p class="card__p col-3-6 row-3-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi fugiat ab, at pariatur rerum illum deserunt optio. 
+                    Necessitatibus molestias ratione inventore velit vitae numquam quas quod quibusdam incidunt?
+                </p>
+            </section>
+            <section class="pagination box-shadow">
+                <span class="pagination__sentido">Anterior</span> 
+                <span class="pagination__n">1</span> 
+                <span class="pagination__sentido">Siguiente</span>
+            </section>
+        </article>
+    </main>
+    <aside class=" asideIndex row-3-10 col-9-13">
+        <div class=" containerBlog__aside box-shadow">
+            <iframe src="https://es.widgets.investing.com/top-cryptocurrencies?theme=darkTheme" width="100%" height="600" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Cortesía de <a href="https://es.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>    
+        </div>
+        <article class="containerBlog__aside">
+            <h2 class="containerBlog__h2 box-shadow">Entradas Destacadas</h2>
+            <section class="postCorto">
+                <picture class="postCorto__pic">
+                    <img src="./assets/media/elon.webp" alt="">
+                </picture>
+                <h3 class="postCorto__h3">Noticia destacada1</h3>
+            </section>
+            <section class="postCorto">
+                <picture class="postCorto__pic">
+                    <img src="./assets/media/elon.webp" alt="">
+                </picture>
+                <h3 class="postCorto__h3">Noticia destacada1</h3>
+            </section>
+            <section class="postCorto">
+                <picture class="postCorto__pic">
+                    <img src="./assets/media/elon.webp" alt="">
+                </picture>
+                <h3 class="postCorto__h3">Noticia destacada1</h3>
+            </section>
+            <section class="postCorto">
+                <picture class="postCorto__pic">
+                    <img src="./assets/media/elon.webp" alt="">
+                </picture>
+                <h3 class="postCorto__h3">Noticia destacada1</h3>
+            </section>
+        </article>
+        <article class="containerBlog__aside">
+            <h2 class="containerBlog__h2 box-shadow">Categorías destacas</h2>
+            <section class="categoriasDestacadas">
+                <div class="catGrid col-1-2 row-1-2 box-shadow">
+                    <h3 class="catGrid__h3">Bitcoin</h3>
+                    <img class="catGrid__img" src="./assets/media/ethereum-banco-central-1536x512.jpg" alt="">
+                </div>
+                <div class="catGrid col-2-3 row-1-2 box-shadow">
+                    <h3 class="catGrid__h3">Ethereum</h3>
+                    <img class="catGrid__img" src="./assets/media/nvidiacard.jpg" alt="">
+                </div>
+                <div class="catGrid col-1-2 row-2-3 box-shadow">
+                    <h3 class="catGrid__h3">Reseñas</h3>
+                    <img class="catGrid__img" src="./assets/media/bitecaru.webp" alt="">
+                </div>
+                <div class="catGrid col-2-3 row-2-3 box-shadow">
+                    <h3 class="catGrid__h3">Editorial</h3>
+                    <img class="catGrid__img" src="./assets/media/productos/datacenter.png" alt="">
+                </div>
+            </section>
+        </article>
+    </aside>
+    <aside id="categorias" class="corp">
+        <div class="dropdown-content bg-white">
+            <a id="categoria0" class="btnClear btnBlue text-black p-1 m-1">categoria 1</a>
+            <a id="categoria1" class="btnClear btnBlue text-black p-1 m-1">categoria 2</a>
+            <a id="categoria2" class="btnClear btnBlue text-black p-1 m-1">categoria 3</a>
+            <a id="categoria3" class="btnClear btnBlue text-black p-1 m-1">categoria 4</a>
+            <a id="categoria4" class="btnClear btnBlue text-black p-1 m-1">categoria 5</a>
+            <a id="categoria5" class="btnClear btnBlue text-black p-1 m-1">categoria 6</a>
+            <a id="categoria6" class="btnClear btnBlue text-black p-1 m-1">categoria 7</a>
+            <a id="categoria7" class="btnClear btnBlue text-black p-1 m-1">categoria 8</a>
+            <a id="categoria8" class="btnClear btnBlue text-black p-1 m-1">categoria 9</a>
+            <a id="categoria9" class="btnClear btnBlue text-black p-1 m-1">categoria 10</a>   
+        </div>
+        <div id="subCategorias0" class="flex-row justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+            <a href="" class="mt-1 a">sape1</a>
+        </div>
+        <div id="subCategorias1" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape1</a>
+        </div>
+        <div id="subCategorias2" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape1</a>
+        </div>
+        <div id="subCategorias3" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape3</a>
+        </div>
+        <div id="subCategorias4" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape4</a>
+        </div>
+        <div id="subCategorias5" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape5</a>
+        </div>
+        <div id="subCategorias6" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape6</a>
+        </div>
+        <div id="subCategorias7" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape7</a>
+        </div>
+        <div id="subCategorias8" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape8</a>
+        </div>
+        <div id="subCategorias9" class="flex-col d-hidden justify-evenly pb-1 pos-rel g">
+            <a href="" class="mt-1 a w-full">sape9</a>
+        </div>    
+    </aside>
+    <footer class="footer row-10-12 col-1-13">
+        <article class="containerBlog w-100">
+            <h3 class="footer__h3">Nuestras Redes</h3>
+            <section class="footer__redesSociales">
+                <ul class="w-100">
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-twitch"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </section>
+        </article>
+        <article class="containerBlog">
+            <h3 class="footer__h3">Categorias</h2>
+            <section class="footer__contain">
+                <ul>
+                    <li>nuevas entradas</li>
+                    <li>bitcoin</li>
+                    <li>Ethereum</li>
+                    <li>Reseñas</li>
+                    <li>Editorial</li>
+                </ul>
+            </section>
+        </article>
+        <article class="containerBlog">
+            <h3 class="footer__h3">mapa de sitio</h2>
+            <section class="footer__contain">
+                <ul>
+                    <li>home</li>
+                    <li>blog</li>
+                    <li>catalogo</li>
+                    <li>dashboard</li>
+                </ul>
+            </section>
+        </article>
+    </footer>
+    <script src="./assets/scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9688e54410.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/media/logo.ico" type="image/x-icon">
+    <title> Zod-Sec Dashboard </title>
+</head>
+<body class="bg-gradient-to-b from-slate-900 to-slate-800">
+    <header class="flex flex-col">
+        <article class="flex m-3 justify-between items-center text-white">
+            <picture class="ml-3"><img src="./assets/media/logo.svg" alt="Logo Zod-sec" style="width: 150px"></picture>
+            <nav>
+                <ul class="flex color-slate-100">
+                    <li class="m-5"><a class ="px-5 py-3 hover:bg-slate-800 rounded-lg"href="">Ir al catalogo</a></li>
+                    <li class="m-5"><a class ="px-5 py-3 hover:bg-slate-800 rounded-lg"href="">Ir al blog</a></li>
+                    <li class="m-5"><a class ="px-5 py-3 hover:bg-slate-800 rounded-lg"href=""><i class="fa-solid fa-user"></i></a></a></li>
+                </ul>
+            </nav>
+        </article>
+  
+        <article class="flex  text-white mt-1">
+            <section class="flex flex-col p-1 m-5 bg-gradient-to-b from-slate-800 to-transparent w-full rounded-lg">
+                <h3 class="text-3xl">1</h3>
+                <p class="text-md text-slate-500">workers</p>
+            </section> 
+            <section class="flex flex-col p-1 m-5 w-full bg-gradient-to-b from-slate-800 to-transparent  rounded-lg">
+                <h3 class="text-3xl">6</h3>
+                <p class="text-md text-slate-500">GPU</p>
+            </section>
+            <section class="flex flex-col p-1 m-5 w-full bg-gradient-to-b from-slate-800 to-transparent  rounded-lg">
+                <h3 class="text-2xl">830.0 w</h3>
+                <p class="text-md text-slate-500">consumo</p>
+            </section>
+            <section class="flex flex-col p-1 m-5 w-full bg-gradient-to-b from-slate-800 to-transparent  rounded-lg">
+                <h3 class="text-2xl">393.0 MH/s</h3>
+                <p class="text-md text-slate-500">ETH</p>
+            </section>
+            <section class="flex flex-col p-1 m-5 w-full bg-gradient-to-b from-slate-800 to-transparent  rounded-lg">
+                <h3 class="text-2xl">393.O MH/s</h3>
+                <p class="text-md text-slate-500">ETHASH</p>
+            </section>
+            <section class="flex flex-col p-1 m-5 w-full bg-gradient-to-b to-transparent from-slate-800 rounded-lg">
+                <h3 class="text-2xl">$0.00</h3>
+                <p class="text-md text-slate-500">Tus fondos</p>
+            </section>
+        </article>
+        <nav>
+            <ul class="flex mr-20 ml-5 py-5 text-zinc-300">
+                <li  class=" mr-5 text-white"><a id="menuDash" class="border-b-2 pb-5" href="./index.html">Monitor</a></li>
+                <li  class=" mr-5 hover:text-white"><a id="menuBlog" class="hover:border-b-2 hover:pb-5" href="./blogAdmin.html">Gestor de blog</a></li>
+                <li  class=" mr-5 hover:text-white"><a id="menuCatalogo" class="hover:border-b-2 hover:pb-5" href="./cateAdmin.html">Gestor de catalogo</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main class="flex flex-col">
+        <nav class="mx-5 mt-10">
+            <ul id="subMenu" class="flex justify-start align-center text-zinc-400 text-sm">
+                <li><a href="" class="border-b pb-2">Mis consultas</a></li>
+                <li><a href="" class="hover:border-b hover:pb-2 mx-5">Mis productos</a></li>
+            </ul>
+        </nav>
+        <article class="m-5  h-full rounded-lg p-5 ">
+            <div class="flex-col">
+                <h1 class="ml-2 my-10 text-5xl font-thin text-slate-600">Usuarios</h1>
+            </div>
+            <table class="table-fixed w-full rounded-full border-1 border-sky-600  overflow-x-hidden ">
+    
+                <thead class="table-header-group dark:bg-slate-900 ">
+
+                    <tr class="table-row">
+                        <th class="table-cell text-center text-zinc-200">Asunto</th>
+                        <th class="table-cell text-center text-zinc-200">ID</th>
+                        <th class="table-cell text-center text-zinc-200">Fecha de creación</th>
+                        <th class="table-cell text-center text-zinc-200">status</th>
+                        <th class="table-cell text-center text-zinc-200"></th>
+                    </tr>
+
+                </thead>
+
+                <tbody class="table-row-group dark:bg-slate-900">
+
+                    <tr class="table-row border-b border-slate-100 dark:border-cyan-900">
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">Rig 6 amd</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">#1246363534cd2</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">20/04/2022</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">Pendiente</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100"><button class="bg-slate-800  text-zinc-300 hover:bg-zinc-700 px-3 py-1 rounded text-sm m-0 font-bold">VER</button></td>
+                    </tr>
+
+                    <tr class="table-row border-b border-slate-100 dark:border-cyan-900">
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">Rig 6 nvidia</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">#1246363534cd2</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">20/04/2022</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">Resuelto</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100"><button class="bg-slate-800  text-zinc-300 hover:bg-zinc-700 px-3 py-1 rounded text-sm m-0 font-bold">VER</button></td>
+                    </tr>
+
+                    <tr class="table-row border-b-2 border-slate-100 dark:border-cyan-900">
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100"> consulta AMD RADEON 550XT</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">#1246363534cd2</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">20/04/2022</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100">En Proceso</td>
+                        <td class="table-cell text-center p-4 pl-8 text-zinc-200 dark:text-zinc-100"><button class="bg-slate-800  hover:bg-zinc-700 text-zinc-300 px-3 py-1 rounded text-sm m-0 font-bold">VER</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="flex justify-end items-center my-5">
+            </div>
+        </article>
+        <!-- Editar usuario-->
+        <article class="m-16  h-full rounded-lg p-5 ">
+            <!-- 
+            Correo
+            username
+            passwrd
+            nombre
+            apellido
+            telefono
+            Provincia
+            dirección
+            status
+            -->
+            <h1 class="ml-2 my-10 text-5xl font-thin text-slate-600">Editar Datos</h1>
+            <section id="userPanel" class="grid gap-4 grid-cols-3">
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Correo<i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes@sapes.com</span>
+                    
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Username <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Nombre <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Apellido <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Telefono <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Provincia <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <select class="hidden rounded-lg p-1" type="text">
+                        <option value="CABA">CABA</option>
+                        <option value="Buenos Aires">Bs. As.</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquen">Neuquen</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Sgo. del Estero">Sgo. del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                       <option value="Tucuman">Tucuman</option> 
+                    </select>
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="text-slate-500 pb-2">Dirección <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <input class="hidden rounded-lg p-1" type="text">
+                    <span class="span rounded-lg p-1 text-slate-200">Sapes</span>
+                </div>
+                <div class="flex flex-col align-center self-start">
+                    <label for="" class="text-slate-500 pb-2">Status <i class="ml-3 p-1 fa-solid fa-pen-to-square cursor-pointer hover:text-slate-600"></i></label>
+                    <select class="hidden rounded-lg p-1" type="text"> 
+                        <option value="verificado">Verificado</option>
+                        <option value="no verificado">No verificado</option>
+                    </select>
+                    <span class="span rounded-lg p-1 text-slate-200">Verificado</span>
+                </div>  
+                
+            </section>
+            <section class="flex m-5 justify-end">
+                <button class="text-slate-200 bg-slate-700 hover:bg-slate-600 p-3 rounded-lg">Confirmar Cambios</button>
+            </section>
+            <div class="flex py-1 my-5">
+                <button class="text-slate-200 bg-slate-700 hover:bg-slate-600 p-3 rounded-lg">Cambiar contraseña</button>
+            </div>       
+        </article>
+    </main>
+    <!-- <script src="./assets/scripts/categorias.js"></script> -->
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>FORM'S</title>
+</head>
+<body>
+    <div class="formUserSettings">
+        <ul class="formUserSettings__ul">
+            <li class="formUserSettings__ul__li flex-column">
+                <picture class="img-user"><img src="../media/elon.webp" alt=""></picture>
+                <span class="editar">editar</span>
+            </li>
+            <li class="formUserSettings__ul__li">
+                <span>nombre: <span class="dateUser">11696969</span></span>
+                <span class="editar">editar</span>
+            </li>
+            <li class="formUserSettings__ul__li">
+                <span>apellido: <span class="dateUser">11696969</span></span>
+                <span class="editar">editar</span>
+            </li>
+            <li class="formUserSettings__ul__li">
+                <span>telefono: <span class="dateUser">11696969</span></span>
+                <span class="editar">editar</span>
+            </li>
+            <li class="formUserSettings__ul__li">
+                <span>direccion: <span class="dateUser">11696969</span></span>
+                <span class="editar">editar</span>
+            </li>
+        </ul>
+        <div class="containerBtn">
+            <span class="confirmarBtn box-shadow">Confirmar</span>
+            <span class="passChangeBtn box-shadow">Cambiar contraseña</span>
+        </div>
+    </div>
+<!-- gestor de entradas-->
+    <article class="form column-dash">
+        <h2 class="tituloDash">Publicar entrada</h2>
+        <form class="formDash" action="">
+            <label for="">Asunto</label>
+            <input type="text" name="" id="">
+            <label for="">imagen principal</label>
+            <input type="text" name="" id=""> <!--input para subir una imagen-->
+            <label for="">procesador de texto</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="btndash formbtn">postear</div>
+        </form>
+    </article>
+    <article class="formD column-dash modal">
+        <form class="formDash" action="">
+            <h2 class="tituloDash">Consulta sobre Placas de video</h2>
+            <label for="">Asunto</label>
+            <input type="text" name="" id="">
+            <label for="">Presupuesto</label>
+            <input type="text" name="" id="">
+            <label for="">Expectativas</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="btndash formbtn">enviar</div>
+        </form>
+    </article>
+    <article class="formD column-dash modal">
+        <h2 class="tituloDash">Consulta sobre Rigs</h2>
+        <form class="formDash" action="">
+            <label for="">Asunto</label>
+            <input type="text" name="" id="">
+            <label for="">Presupuesto</label>
+            <input type="text" name="" id="">
+            <label for="">Expectativas</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="btndash formbtn">enviar</div>
+        </form>
+    </article>
+    <article class="formD column-dash modal">
+        <h2 class="tituloDash">consulta Housing</h2>
+        <form  class="formDash"action="">
+            <label for="">Asunto</label>
+            <input type="text" name="" id="">
+            <label for="">Diagnostico</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="btndash formbtn">enviar</div>
+        </form>
+    </article>
+    <article class="column-dash modal">
+        <h2 class="tituloDash">Soporte</h2>
+        <form  class="formDash"action="">
+            <label for="">Asunto</label>
+            <input type="text" name="" id="">
+            <label for="">Diagnostico</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="btndash formbtn">enviar</div>
+        </form>
+    </article>
+    <!-- Subir foto modal--> 
+    <main>
+        <div id="wrapper">
+            <h1>Subir Imágenes</h1>
+            <div id="container-input">
+                <div class="wrap-file">
+                    <div class="content-icon-camera">
+                        <input type="file" id="file" name="file[]" accept="image/*" multiple />
+                        <div class="icon-camera"></div>
+                    </div>
+                    <div id="preview-images">
+                        
+                    </div>
+                </div>
+                <button id="publish">Publicar</button>
+            </div>
+            <div class="preload">
+                <img src="assets/images/preload.gif" alt="preload" />
+            </div>
+            <h2 id="success"></h2>
+        </div>
+    </main>
+    <script src="./scripts/subirFotos.js"></script>     
+</body>
+</html>

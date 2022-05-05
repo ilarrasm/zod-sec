@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9688e54410.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="dashboard-header">
+        <span id="asideBtn" class="openbtn">
+            <i class="fas fa-bars"></i>
+        </span>
+        <span class="logo-dash">Zod Security</span>
+        <a class="irAlBlog" href="#">ir al blog</a>
+        <picture id="botonUser"class="user-pic">
+            <img src="../media/elon.webp" alt="">
+        </picture>
+        <div id="userDate" class="modal">
+            <div class="dropdownUser">
+                <a  class="dropdownUser__a" href="#">Configurar cuenta</a>
+                <a  class="dropdownUser__a" href="#">Soporte</a>
+                <a  class="dropdownUser__a" href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="newPost">    
+        <h1 class="H1 col-1-4 row-1-2 center">Nueva Entrada</h1>
+        <input class="tittlePostInput col-1-3 row-2-3"type="text" placeholder="introducir Titulo">
+        <span class="imgUp flex-row col-3-4 row-2-3">
+            <input class="update" type="file" name="" id="update">
+            <label for="update"> <i class="fa-solid fa-file-arrow-up"></i> Agregar imagen principal</label>
+        </span>     
+        <button id="previsualizar" class="col-3-4 row-1-2 center">previsualizar</button>
+        <section class="col-3-4 row-3-4">
+            <ul class="flex-column container checkesCon">
+                <li class="checkes"><label for="">categoria</label> </li>
+                <li class="checkes"><input type="checkbox" name="" id=""><span>Categoria 1</span></li>
+                <li class="checkes"><input type="checkbox" name="" id=""><span>Categoria 1</span></li>
+                <li class="checkes"><input type="checkbox" name="" id=""><span>Categoria 1</span></li>
+                <li class="checkes"><input type="checkbox" name="" id=""><span>Categoria 1</span></li>
+            </ul>
+            <div class="flex-column container">
+                <label for="">Tags</label>
+                <div class="flex-row">
+                    <input class="tittlePostInput"type="text">
+                    <button id="add">ADD</button>
+                </div>
+            </div>
+            <div class="flex-row container">
+                <button id="guardar">Guardar</button>
+                <button id="publicar">Publicar</button>
+            </div>
+        </section>
+        <section class="col-1-3 row-3-4 box-shadow">
+            <!--Editor.js-->
+        </section>
+    </main>
+    <aside  id="asideContainer" >
+        <nav class="dash-nav aside-dash">
+            <div class="dash-nav__header">
+                <span class="usernav">elonmusk01</span></span>
+            </div>
+            <span class="a-dash white actives">Dashboard</span>
+            <span class="a-dash white dropdownBtn">Presupuesto</span>
+            <div class="drop-content">
+                <a class="subDrop placasB" href="#">Placas de video</a>
+                <a class="subDrop rigB" href="#">rigs</a>
+                <a class="subDrop housingB" href="#">Housing</a>
+            </div>
+            <span class="a-dash white soporteB">Soporte</span>
+            </ul>
+        </nav>
+        <div class="modalAside"></div>
+    </aside>
+    <script src="../script/app.js"></script>
+</body>
+</html>
